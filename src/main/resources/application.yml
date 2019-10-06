@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ximou1234Z=
+    url: jdbc:mysql://47.95.221.236/springboottest?characterEncoding=utf-8&useSSL=false
+    hikari:
+      minimum-idle: 3
+      maximum-pool-size: 10
+      max-lifetime: 30000
+      connection-test-query: SELECT 1
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+server:
+  servlet:
+    context-path: /api
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: application/json  image/x-icon  text/plain application/x-javascript application/javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png
+    min-response-size: 1024
+filesdir: /opt/data/files/
