@@ -20,6 +20,10 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: Asia/Shanghai
+  redis:
+    host: 10.88.80.156
+    port: 6379
+    password: root
 server:
   servlet:
     context-path: /api
