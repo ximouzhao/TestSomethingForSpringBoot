@@ -2,8 +2,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: ximou1234Z=
-    url: jdbc:mysql://47.95.221.236/springboottest?characterEncoding=utf-8&useSSL=false
+    password: mysql1234Z=
+    url: jdbc:mysql://home.ximouzhao.com/springboottest?characterEncoding=utf-8&useSSL=false
     hikari:
       minimum-idle: 3
       maximum-pool-size: 10
