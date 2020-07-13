@@ -21,17 +21,18 @@ public class JpaUserRepositoryTest {
     public void save(){
         List<JpaUserModel> jpaUserModels=new ArrayList<>();
         JpaUserModel jpaUserModel=new JpaUserModel();
+        jpaUserModel.setId(111L);
         jpaUserModel.setUserId("222");
-        jpaUserModel.setUserName("aaa");
+        jpaUserModel.setUserName("xxx");
         jpaUserModels.add(jpaUserModel);
-        JpaUserModel jpaUserModel1=new JpaUserModel();
-        jpaUserModel1.setUserId("333");
-        jpaUserModel1.setUserName("bbb");
-        jpaUserModels.add(jpaUserModel1);
-        JpaUserModel jpaUserModel2=new JpaUserModel();
-        jpaUserModel2.setUserId("444");
-        jpaUserModel2.setUserName("bbb");
-        jpaUserModels.add(jpaUserModel2);
+//        JpaUserModel jpaUserModel1=new JpaUserModel();
+//        jpaUserModel1.setUserId("333");
+//        jpaUserModel1.setUserName("bbb");
+//        jpaUserModels.add(jpaUserModel1);
+//        JpaUserModel jpaUserModel2=new JpaUserModel();
+//        jpaUserModel2.setUserId("444");
+//        jpaUserModel2.setUserName("bbb");
+//        jpaUserModels.add(jpaUserModel2);
         List<JpaUserModel> r=jpaUserRepository.saveAll(jpaUserModels);
         assertNotNull(r);
     }

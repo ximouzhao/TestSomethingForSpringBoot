@@ -1,9 +1,12 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: mysql1234Z=
+#    url: jdbc:mysql://home.ximouzhao.com/springboottest?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://10.2.0.38:3306/resource_admin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
-    password: mysql1234Z=
-    url: jdbc:mysql://home.ximouzhao.com/springboottest?characterEncoding=utf-8&useSSL=false
+    password: root
     hikari:
       minimum-idle: 3
       maximum-pool-size: 10
@@ -21,9 +24,8 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: Asia/Shanghai
   redis:
-    host: 10.88.80.156
+    host: 192.168.64.128
     port: 6379
-    password: root
 server:
   servlet:
     context-path: /api
